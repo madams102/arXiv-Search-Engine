@@ -1,0 +1,94 @@
+att@dams:~/Documents/COSC 420/Project2$ mpiexec -n 2 main
+Loading back-index. Please wait.
+Loading Adjacency List. Please Wait.
+Done loading! Finished in 385.688374s
+Enter a search query (5 words or less, please)
+eigenvalue
+https://arxiv.org/abs/0805.2058
+https://arxiv.org/abs/0906.4543
+https://arxiv.org/abs/1001.3453
+https://arxiv.org/abs/1004.0861
+https://arxiv.org/abs/1007.4652
+https://arxiv.org/abs/1103.3869
+https://arxiv.org/abs/1106.4986
+https://arxiv.org/abs/1104.4832
+https://arxiv.org/abs/1104.4513
+https://arxiv.org/abs/1107.3058
+
+Search took 0.852571s
+
+Enter a search query (5 words or less, please)
+principal eigenvalue
+https://arxiv.org/abs/0906.0510
+https://arxiv.org/abs/0905.4176
+https://arxiv.org/abs/0906.4543
+https://arxiv.org/abs/1001.3453
+https://arxiv.org/abs/1004.0861
+https://arxiv.org/abs/1007.4652
+https://arxiv.org/abs/1103.3869
+https://arxiv.org/abs/0710.3405
+https://arxiv.org/abs/0710.3665
+https://arxiv.org/abs/1009.2975
+
+Search took 3.397206s
+
+Enter a search query (5 words or less, please)
+Gaussian eigenvalue
+https://arxiv.org/abs/0805.2058
+https://arxiv.org/abs/0906.4543
+https://arxiv.org/abs/1001.3453
+https://arxiv.org/abs/1004.0861
+https://arxiv.org/abs/1007.4652
+https://arxiv.org/abs/1103.3869
+https://arxiv.org/abs/1106.4986
+https://arxiv.org/abs/1104.4832
+https://arxiv.org/abs/1104.4513
+https://arxiv.org/abs/1107.3058
+
+Search took 0.852117s
+
+Enter a search query (5 words or less, please)
+Pfaffian Hermiticity
+No matching words found
+
+Search took 0.000125s
+
+Enter a search query (5 words or less, please)
+pfaffian hermiticity 
+https://arxiv.org/abs/0707.0478
+https://arxiv.org/abs/0707.0483
+https://arxiv.org/abs/0911.1276
+https://arxiv.org/abs/0806.2756
+https://arxiv.org/abs/0912.0658
+https://arxiv.org/abs/1012.0597
+https://arxiv.org/abs/0812.2334
+https://arxiv.org/abs/0812.2337
+https://arxiv.org/abs/1008.5194
+https://arxiv.org/abs/1002.2889
+
+Search took 0.018512s
+
+Enter a search query (5 words or less, please)
+Gaussian orthogonal ensemble
+^Cmatt@dams:~/Documents/COSC 420/Project2$ (went up to 95% RAM usage, had to cancel on that one)
+
+
+matt@dams:~/Documents/COSC 420/Project2$ mpiexec -n 2 main
+Loading back-index. Please wait.
+Loading Adjacency List. Please Wait.
+Done loading! Finished in 396.521511s
+Enter a search query (5 words or less, please)
+ginibre laguerre
+https://arxiv.org/abs/0902.3561
+https://arxiv.org/abs/0810.1458
+https://arxiv.org/abs/0911.1276
+https://arxiv.org/abs/0911.1276
+https://arxiv.org/abs/1009.2037
+https://arxiv.org/abs/1104.5203
+https://arxiv.org/abs/1103.4593
+https://arxiv.org/abs/1103.5848
+https://arxiv.org/abs/1108.3035
+https://arxiv.org/abs/1102.5669
+
+Search took 0.015340s
+

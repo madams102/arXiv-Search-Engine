@@ -1,0 +1,39 @@
+Our "software package" for the Arxiv search engine consists of 7 files
+_________________
+howManyArticles.c
+    This simple program goes through the out.txt file of articles/authors/titles/abstracts, and counts how many articles there are. Turns out it wasn't helpful in other aspects of the project, but it was useful in trying to understand the scale of this program, and how important memory management will be.
+
+________________
+main_adjacency.c
+    This program goes through the arxiv-citations.txt, builds a BST containing all of the article ID's and articles that they reference. It then outputs to a file called adjacencyBST.txt, which can then be read in by the main function to rebuild the BST for later use.
+
+____________
+main_words.c
+    Similar to main_adjacency, this program creates a BST of words, where each node contains a sub-BST that keeps track of which articles have that word in them. Outputs to 12 different files with the naming standard output#.txt
+
+_____
+bst.h
+    Header file for the backwards-index BST. Contains functions like search, write to file, read from file, etc.
+
+______________
+adjacencyBST.h
+    Similar structure to bst.h, but is specifically for references. Used to create adjacency matrices for the HITS and PageRank algorithms
+
+______
+mLib.h
+    The math library we have been working on all semester. Contains the HITS and PageRank algorithms, as well as a special matrix-vector multiplication function that is very low on memory usage. That was very important, otherwise RAM would fill up faster than you could buy it.
+
+______
+main.c
+    Queries BSTs and returns a list of sites that the HITS and PageRank algorithms deemed the most important. 
+
+
+(a) Processing the raw data took on average 70 minutes per batch. It was done in 3 different batches, since we could only fit 5 BST's in RAM without my computer freezing. Final output was 12 different files, although it could be split any number of ways depending on how the program is tuned.
+
+(b) Loading the database into memory takes on average 6.5 to 7 minutes
+
+(c) The time it takes to get results to the user heavily depends on the popularity of the words they are searching. For example, searches like "ginibre laguerre" return in 0.01534 seconds (on two processors), but searches containing words like "gaussian" may be too costly in terms of memory to run -- regardless, they take quite a long time to fill it up, around two minutes. The search "principal eigenvalue" took 3.397206 seconds to return results.
+
+(d) There is room for improvement in a few things. Using a balanced tree datastructure, such as a red black tree, would improve lookup times quite a bit, although the startup time of the program would take longer due to extra overhead in managing the tree as it is being built. For Google, this must not be much of a problem, as their servers stay up long enough that some extra startup time would be okay. Output could also be improved as we did not have time to display that a result had multiple words in it. Nor is our method for displaying the top results ideal. However, all results are relevant to the search topic, which is a win for us. 
+
+(e) It would be a decent search engine for people who are researching non-mainstream topics, as these results are the ones that return the fastest. 
